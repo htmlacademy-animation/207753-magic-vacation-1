@@ -63,6 +63,13 @@
       }
     }
   }
+
+  &.swiper-slide-active,
+  &.swiper-slide-next {
+    .slider__item-text {
+      animation: slideToLeft 0.9s ease-in forwards;
+    }
+  }
 }
 
 .slider__item-title {
