@@ -38,3 +38,42 @@
     transform: translateY(0%);
   }
 }
+
+@keyframes showBullet {
+  0% {
+    transform: scale(0);
+    color: transparent;
+  }
+  50% {
+    color: $c-light;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes showListItem {
+  from {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes showRulesButton {
+  0% {
+    opacity: 0;
+    width: 0;
+    color: transparent;
+  }
+  85% {
+    color: $c-dark;
+  }
+  100% {
+    opacity: 1;
+    width: 18rem;
+  }
+}

@@ -3,9 +3,8 @@
   transition: color 0.3s ease-in;
 
   &:hover {
-    .social-block__list {
+    .social-block__link {
       opacity: 1;
-      pointer-events: auto;
     }
   }
 }
@@ -172,7 +171,8 @@
   color: $c-light;
   border: 2px solid transparent;
   border-radius: 50%;
-  transition: color 0.3s ease-in;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
 
   @media (min-width: $stop-scaling) {
     width: 40px;
@@ -224,6 +224,8 @@
   }
 
   &--insta {
+    transition-delay: 0.2s;
+
     svg {
       width: 1.5rem;
       height: 1.5rem;
@@ -236,6 +238,8 @@
   }
 
   &--vk {
+    transition-delay: 0.4s;
+
     svg {
       width: 1.7rem;
       height: 1rem;
